@@ -1,0 +1,22 @@
+{
+    "name": "lvphp/lvadmin",
+    "description": "the lvadmin",
+    "type": "framework",
+    "keywords": ["framework","lvadmin","ORM"],
+    "homepage": "",
+    "license": "Apache2",
+    "authors": [
+        {
+            "name": "lvphp",
+            "email": "798077009@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "minimum-stability": "dev",
+    "repositories": [
+        {"type": "composer", "url": "http://packagist.phpcomposer.com"},
+        {"packagist": false}
+    ]
+}

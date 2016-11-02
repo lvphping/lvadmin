@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>添加管理员 - lvadmin</title>
+    <bootstrapcss />
+    <icheckcss />
+</head>
+<body>
+
+<!-- 导航栏开始 -->
+<div class="bjy-admin-nav">
+    <i class="fa fa-home"></i> 首页
+    &gt;
+    后台管理
+    &gt;
+    网站配置
+</div>
+<!-- 导航栏结束 -->
+<ul id="myTab" class="nav nav-tabs">
+	<li class="active">
+		<a href="#home" data-toggle="tab">站点配置</a>
+	</li>
+	<li><a href="#other" data-toggle="tab">其他配置</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+	<div class="tab-pane fade in active" id="home">
+	<form class="form-inline" method="post" action="{:U('index')}">
+		<table class="table table-striped table-bordered table-hover table-condensed">
+        <tr>
+            <th>站点名称:</th>
+            <td> 
+                <input class="form-control" type="text" name="webname" value="{:C('WEBNAME')}">
+            </td>
+        </tr>
+        <tr>
+            <th>网站域名:</th>
+            <td>
+                <input class="form-control" type="text" name="webaddress" value="{:C('WEBADDRESS')}">
+            </td>
+        </tr>
+        <tr>
+            <th>网站logo:</th>
+            <td>
+                <input class="form-control" type="file" name="weblogo" value="{:C('WEBLOGO')}">
+            </td>
+        </tr>
+        <tr>
+            <th>联系邮箱:</th>
+            <td>
+                <input class="form-control" type="text" name="webemail" value="{:C('WEBEMAIL')}">
+            </td>
+        </tr>
+        <tr>
+            <th>联系手机:</th>
+            <td>
+                <input class="form-control" type="text" name="webtel" value="{:C('WEBTEL')}">
+            </td>
+        </tr>
+        <tr>
+            <th>网站关键字:</th>
+            <td>
+                <input class="form-control" type="text" name="webkey" value="{:C('WEBKEY')}">
+            </td>
+        </tr>
+        <tr>
+            <th>网站备注:</th>
+            <td>
+                <textarea name="webremark" class="form-control">{:C('WEBREMARK')}</textarea>
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <input class="btn btn-success" type="submit" value="提交">
+            </td>
+        </tr>
+    </table>
+    </form>
+	</div>
+	<div class="tab-pane fade" id="other">
+	  <form class="form-inline" method="post" action="{:U('index',array('conf'=>'do'))}">
+		<table class="table table-striped table-bordered table-hover table-condensed">
+        <tr>
+            <th>是否开始调试:</th>
+            <td> 
+                <input type="radio" name="show_page_trace" value="true" <if condition="C('SHOW_PAGE_TRACE') eq true">checked</if>/>开启&nbsp;&nbsp;
+                <input type="radio" name="show_page_trace" value="false" <if condition="C('SHOW_PAGE_TRACE') eq false">checked</if>/>关闭&nbsp;&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <th>邮箱发件人:</th>
+            <td>
+                <input class="form-control" type="text" name="email_from_name" value="{:C('EMAIL_FROM_NAME')}">
+            </td>
+        </tr>
+         <tr>
+            <th>STMP:</th>
+            <td>
+                <input class="form-control" type="text" name="email_smtp" value="{:C('EMAIL_SMTP')}">
+            </td>
+        </tr>
+        <tr>
+            <th>账号:</th>
+            <td>
+                <input class="form-control" type="text" name="email_username" value="{:C('EMAIL_USERNAME')}">
+            </td>
+        </tr>
+        <tr>
+            <th>密码:</th>
+            <td>
+                <input class="form-control" type="text" name="email_password" value="{:C('EMAIL_PASSWORD')}"><code>密码  注意: 163和QQ邮箱是授权码；不是登录的密码</code>
+            </td>
+        </tr>
+        <tr>
+            <th>链接方式:</th>
+            <td>
+                <input class="form-control" type="text" name="email_smtp_secure" value="{:C('EMAIL_SMTP_SECURE')}"><code>*链接方式 如果使用QQ邮箱；需要把此项改为  ssl</code>
+            </td>
+        </tr>
+        <tr>
+            <th>端口:</th>
+            <td>
+                <input class="form-control" type="text" name="email_port" value="{:C('EMAIL_PORT')}"><code>*如果使用QQ邮箱；需要把此项改为  465</code>
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <input class="btn btn-success" type="submit" value="提交">
+            </td>
+        </tr>
+    </table>
+    </form>
+	</div>
+</div>
+<bootstrapjs />
+<icheckjs color="blue" />
+</body>
+</html>
