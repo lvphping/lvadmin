@@ -3,43 +3,8 @@
 这些都是经过线上运营考验的；无毒害可以免费放心折腾使用；只要不会某一天找到我说因为借鉴了这个开源产品的一些方法；而导致了好几个亿的损失；要我负责并赔偿就好；￣へ￣  
 当然；如果是想要一套博客程序；这也是有的：
 
-## 说明
-此开源产品面向所有thinkphp开发用户；因为我的基本思想是不改动框架的源文件；只是围绕着框架扩展；所以整合的这些功能都可以无痛兼容各种环境；既可以按照文章将整合的这些功能方便的移植到你已有的项目中；也可以直接以此项目为基础开发；
-
-## 系列文章
-1. [thinkphp整合系列之短信验证码、订单通知](http://baijunyao.com/article/66)
-2. [thinkphp整合系列之rbac的升级版auth权限管理系统demo](http://baijunyao.com/article/67)
-3. [thinkphp整合系列之阿里云oss](http://baijunyao.com/article/68)
-4. [thinkphp整合系列之phpmailer批量发送邮件](http://baijunyao.com/article/69)
-5. [thinkphp整合系列之友盟消息推送](http://baijunyao.com/article/70)  
-6. [thinkphp整合系列之phpqrcode生成二维码](http://baijunyao.com/article/71)  
-7. [thinkphp整合系列之融云即时通讯在线聊天](http://baijunyao.com/article/72)  
-8. [thinkphp整合系列之tcpdf生成pdf文件](http://baijunyao.com/article/73)  
-9. [thinkphp整合系列之phpexcel生成excel文件](http://baijunyao.com/article/74)  
-10. [thinkphp整合系列之支付宝MD5加密方式扫码支付](http://baijunyao.com/article/75)  
-11. [thinkphp整合系列之支付宝RSA加密方式接收移动支付通知](http://baijunyao.com/article/76)  
-12. [thinkphp整合系列之微信扫码支付](http://baijunyao.com/article/77)  
-13. [thinkphp整合系列之微信公众号支付](http://baijunyao.com/article/78)  
-14. [thinkphp整合系列之极验滑动验证码](http://baijunyao.com/article/79)  
-15. [thinkphp整合系列之webuploader异步预览上传](http://baijunyao.com/article/80)  
-16. [thinkphp整合系列之phpexcel导入excel数据](http://baijunyao.com/article/82)  
-持续更新中...
-
-## 相关文章
-1. [thinkphp的目录结构设计经验总结](http://baijunyao.com/article/60)
-2. [thinkphp的model模型的设计经验总结](http://baijunyao.com/article/61)
-3. [总结thinkphp快捷查询getBy、getField、getFieldBy用法及场景](http://baijunyao.com/article/59)
-4. [解决thinkphp设置session周期无效的问题](http://baijunyao.com/article/44)
-5. [Thinkphp设置仅在调试模式关闭时显示404页面](http://baijunyao.com/article/70)  
-6. [thinkphp简洁、美观、靠谱的分页类](http://baijunyao.com/article/25)  
-7. [thinkphp自定义模板标签(一)](http://baijunyao.com/article/21)  
-8. [thinkphp自定义模板标签(二)](http://baijunyao.com/article/22)  
-9. [thinkphp把模板文件View独立出来](http://baijunyao.com/article/90)  
-10. [对照着jquery来学vue.js系列之配合thinkphp下拉获取分页数据](http://baijunyao.com/article/88)  
-持续更新中...
-
 ## 使用说明
-1. 请将程序直接放在根目录下；不要多层目录；例如正确：www/;错误：www/bjyadmin/ ；
+1. 请将程序直接放在根目录下；不要多层目录；例如正确：www/;错误：www/lvadmin/ ；
 2. 默认用户名：admin   密码：123456
 
 ## 针对thinkphp的改进优化；
@@ -80,9 +45,9 @@
 例如：   `<ueditor name="content" />` 这样一个简单的标签就可以将editor编辑器引入并设置name名为content;
 提交post时后台即可通过content字段直接获取到内容；  
 `<jquery />`标签可引入jQuery  
-不知道怎么自定义标签？传送门：http://baijunyao.com/article/21   
+不知道怎么自定义标签？ 
 更多标签可以查看 /Application/Common/Tag/My.class.php 源代码
 
 
 ## 商业友好的开源协议
-bjyadmin遵循Apache2开源协议发布。Apache Licence是著名的非盈利开源组织Apache采用的协议。该协议和BSD类似，鼓励代码共享和尊重原作者的著作权，同样允许代码修改，再作为开源或商业软件发布。
+lvadmin遵循Apache2开源协议发布。Apache Licence是著名的非盈利开源组织Apache采用的协议。该协议和BSD类似，鼓励代码共享和尊重原作者的著作权，同样允许代码修改，再作为开源或商业软件发布。
